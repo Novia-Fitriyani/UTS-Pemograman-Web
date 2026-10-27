@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $action = $_POST['action'] ?? '';
 
-    /* ---------- CREATE ---------- */
+    // tambah data
     if ($action === 'create') {
         $nim         = mysqli_real_escape_string($conn, trim($_POST['nim'] ?? ''));
         $namalengkap = mysqli_real_escape_string($conn, trim($_POST['nama_lengkap'] ?? ''));
